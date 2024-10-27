@@ -6,7 +6,8 @@ function eventSubmitForm(event) {
   event.preventDefault();
   const inputEmail = event.target.elements.email.value;
   const inputPassword = event.target.elements.password.value;
-  if (Boolean(inputEmail.trim()) && Boolean(inputPassword.trim())) {
+
+  if (inputEmail.trim() && inputPassword.trim()) {
     const dataUser = {
       email: inputEmail.trim(),
       password: inputPassword.trim(),
