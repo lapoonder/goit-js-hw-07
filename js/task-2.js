@@ -28,7 +28,6 @@ const images = [
 const galleryOriginal = document.querySelector('.gallery');
 const gallery = galleryOriginal.cloneNode(true);
 
-const insertImagesArray = [];
 images.forEach(image => {
   const insertLi = document.createElement('li');
   insertLi.classList.add('list-image');
@@ -40,4 +39,5 @@ images.forEach(image => {
   gallery.append(insertLi);
 });
 
+//Замещаю существующий элемент на странице отредактированным клоном
 galleryOriginal.replaceWith(gallery);
